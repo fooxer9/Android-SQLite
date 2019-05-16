@@ -45,10 +45,10 @@ class MainActivity : AppCompatActivity() {
         val random = Random()
         var dateText = dateFormat.format(Date())
         val cursor: Cursor = db.query(TABLE_NAME,null,null,null,null,null,null)
-        if (cursor.moveToFirst()) {
+       /* if (cursor.moveToFirst()) {
             db.delete(TABLE_NAME, null, null) // если есть записи - удалить все
-        }
-            for (i in 0..4) {
+        }*/
+            for (i in 0..5) {
                 val FIO: String =
                     "${secondName[random.nextInt(secondName.size)]} ${firstName[random.nextInt(firstName.size)]}" +
                             " ${thirdName[random.nextInt(thirdName.size)]}"

@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/element_date" android:layout_weight="1"
             android:textAlignment="textEnd" android:textSize="18sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display4" android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4" android:textColor="@color/colorAccent"
             android:textAllCaps="false"/>
     <Space
             android:layout_width="match_parent"
