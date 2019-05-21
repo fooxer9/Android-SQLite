@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             "Вильям Гиргис","Дмитриевич", "Даниилович", "", "Юрьевич", "Вадимович", "Бахоралиевич", "Эренценович", "Иванович")
 
         // Форматирование времени как "день.месяц.год"
-        var dateFormat: DateFormat = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
+        var dateFormat: DateFormat = SimpleDateFormat("EEE, dd.MM.yyyy, HH:mm:ss", Locale.getDefault())
 
         val NOTES = ArrayList<Item>()
 
