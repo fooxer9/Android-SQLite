@@ -1,5 +1,6 @@
 package msc.fooxer.studdatabase
 
+
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -23,13 +24,17 @@ class RecyclerAdapter internal constructor (val context: Context, val items: Arr
         val item = items[position]
         view.idTextView.text = item.id.toString()
         view.nameTextView.text = item.name
+        view.surnameTextView.text = item.surname
+        view.patrTextView.text = item.patr
         view.dateTextView.text = item.date
 
-        }
+    }
 
-    inner class ViewHolder(view: View): RecyclerView.ViewHolder(view){
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val idTextView = view.findViewById(R.id.element_index) as TextView
         val nameTextView = view.findViewById(R.id.element_name) as TextView
+        val surnameTextView = view.findViewById(R.id.element_surname) as TextView
+        val patrTextView = view.findViewById(R.id.element_patr) as TextView
         val dateTextView = view.findViewById(R.id.element_date) as TextView
 
     }
